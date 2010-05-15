@@ -303,7 +303,7 @@ $.fn.ajaxSubmit = function(options) {
 						return;
 					}
 					log('Could not access iframe DOM after 100 tries.');
-					return;
+					throw 'inaccessible';
 				}
 
 				log('response detected');
